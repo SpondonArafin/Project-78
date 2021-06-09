@@ -1,0 +1,38 @@
+<html>
+
+<head>
+    <title>Family book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>Family book</h1>
+    <img src="198966979_166536832151518_7289962744390557866_n.jpg" style="width:30%" id="family_member_image">
+    <h4 id="family_member_name>
+        <button onclick="update()";>Next</button>
+    <script>
+        var images = [
+            "198966979_166536832151518_7289962744390557866_n.jpg",
+            "IMG_5295.jpg",
+            "IMG_3995.jpg",
+            "IMG_3808.jpg"
+        ]
+        var name = ["Family book","Sporsho Arafin","Shampa Gomes","Shamsul Arafin"];4
+        var i = 0
+        function update() {
+            i++;
+            var numbers_of_family_in_array = 3
+            if(i > numbers_of_family_in_array)
+            {
+                i = 0;
+            }
+            var updatedImage = images[i];
+            var updatedName = names[i];
+            document.getElementById("family_member_image").src = updatedImage;
+            document.getElementById("family_member_name").src = updatedName;
+
+        }
+    </script>
+</body>
+
+</html>
